@@ -157,6 +157,7 @@ int main(){
             fip = trie.iterTrie(check.second,Chars[i],fip);
         }
         cfpi[Chars[i]] = fip;
+        fip.clear();
     }
     unordered_map<char,msci> pattern_base;
     for(auto &check:cfpi){
